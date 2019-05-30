@@ -1,0 +1,42 @@
+Board
+
+- should hold 2 dimensional array
+-  each position holds a moving piece or null piece (null piece inherits from piece)
+-  Create an empty piece class
+- initialize the board with instances of piece in locations where
+Queen, Rook, Knight etc. will start and nil where 
+NullPiece will start
+
+-Board class should have a move_piece(start_pos,end_pos) method
+that updates the 2d grid and also the moved pieces position
+ 
+ - raise an exception if:
+
+ 1.there is no piece at start_pos or
+ 2.the piece cannot move to end_pos.
+
+
+
+ Phase 2
+
+ -write a display class to handle your rendering, 
+ Display class should access the board
+
+ - an instance of cursor initialzes with a cursor pos 
+ and an instance of Board
+ -display will render the square  at @cursor_pos in a different color
+
+ - In display.rb, require cursor.rb and set the instance variable @curstor
+ to Cursor.new([0,0],board)
+
+ - read_char handles console input
+ - fil in handle_key(key) method, use a 
+ case statement that switches on the value 
+ of the key. #handle_key(key) will 
+ a) return the @cursor_Pos 
+ In case of :return of :space 
+
+ b) call update_pos with mov difference from MOVES and return nil
+ (in case of :left,:right,:up,:down) 
+
+ c)exit from the terminal process
