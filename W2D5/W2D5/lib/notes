@@ -1,0 +1,56 @@
+
+
+
+
+# -Tower of Hanoi consists of three pegs or towers with n disks placed one over the other. 
+# -The objective of the puzzle is to move the stack to another peg following these simple rules. 
+# -Only one disk can be moved at a time. No disk can be placed on top of the smaller disk.
+
+
+#[[10] [0] [0]]
+
+# start = [1,2,3,4,5], offset = [], end = []
+
+
+#valid_move?(piece) #piece is smaller than the one in the stack you want to move it to
+#game_over? #all pieces transferred to another array.
+#move(start_stack, end_stack) prompt user to make a move
+#errors # "there are no pieces there!", "your disk is too big!"
+#render #3 arrays
+#game_loop
+
+# render
+# [1,2,3,4,5], [], []
+# which pile do you want to pick from? 0-2
+# checks if that's valid to pick from
+# which pile do you want to move that piece to?
+# checks if that's a valid place to move the piece
+
+
+# until game.won?
+    # render #=> [1], [], [2,3,4,5]
+    
+
+    # get_move
+        # which pile do you want to pick from? 0-2 #=> 0
+        # checks if that's valid to pick from  #=> true
+            # how do we check if it's valid to pick from?
+        # which pile do you want to move that piece to? if it has a disk 
+        # checks if that's a valid place to move the piece #=> true
+            # how do we check if it's valid to move to?
+            # if the disk's value that we picked up is < disk in the first spot of the place we are moving it to
+    # end
+
+    # game.won == true when offset.length == 5 || end.length == 5
+    # [], [], [1,2,3,4,5]
+# end
+# puts "you win"
+
+#focus on won, valid_pick, raise custom error, no user input
+
+#render
+#prompt
+#check if valid? else error and retry
+#place piece
+#check if game.won? repeat game loop
+
