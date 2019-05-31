@@ -1,4 +1,5 @@
 require "io/console"
+require 'colorize'
 
 KEYMAP = {
   " " => :space,
@@ -33,16 +34,37 @@ MOVES = {
 class Cursor
 
   attr_reader :cursor_pos, :board
+  attr_accessor :selected
 
   def initialize(cursor_pos, board)
     @cursor_pos = cursor_pos
     @board = board
+    @selected = false
   end
+
+def toggle_selected 
+ selected == false ? selected = true : selected = false 
+ #print " ".colorize(:background => :green) if selected
+ #@cursor_pos[0].to_s.colorize(:foreground => :green)
+ #sleep(2)
+ return cursor_pos
+
+end
+
+  # def print_black
+  #   temp = @cursor_pos
+  #   @cursor_pos = [8,0]
+  #   print " ".colorize(:background => :black)
+  #   @cursor_pos = temp
+  # end
 
   def get_input
     key = KEYMAP[read_char]
     handle_key(key)
   end
+
+
+
 
   private
 
@@ -52,7 +74,7 @@ class Cursor
     STDIN.raw! # in raw mode data is given as is to the program--the system
                  # doesn't preprocess special characters such as control-c
 
-    input = STDIN.getc.chr # STDIN.getc reads a one-character string as a
+    input = STDIN.getc.chr# STDIN.getc reads a one-character string as a
                              # numeric keycode. chr returns a string of the
                              # character represented by the keycode.
                              # (e.g. 65.chr => "A")
@@ -76,20 +98,17 @@ class Cursor
   end
 
   def handle_key(key) #:left :right #[0,0]
-      process.exit(0) if key == :ctrl_c
+      exit(true) if key == :ctrl_c
       return @cursor_pos if key == :return || key == :space
       pos_diff = MOVES[key]
       update_pos(pos_diff)
       nil
-
   end
 
-  def update_pos(diff)
-    @cursor_pos[0] += diff[0] if @cursor_pos[0]> -1 && @cursor_pos[0] < 8
-    @cursor_pos[1] += diff[1] if @cursor_pos[1]> -1 && @cursor_pos[1] < 8
+  def update_pos(diff)#[0,1]
+    i_pos = @cursor_pos[0]+diff[0]
+    j_pos = @cursor_pos[1]+diff[1]
+    @cursor_pos[0] = i_pos if i_pos > -1 && i_pos < 8
+    @cursor_pos[1] = j_pos if j_pos > -1 && j_pos < 8
   end
-
-
-
-
 end

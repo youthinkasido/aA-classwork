@@ -1,3 +1,30 @@
+
+
+
+
+
+
+
+Phase 3 
+
+- write piece class
+- Return an array of places a piece can move to in the piece class
+- sub classes are required since some pieces move in different ways
+- make modules for slideable and stepable 
+- slidable can implement moves but it needs to know what directions a piece can move in
+(diagonal, horizontally, veritcally or both)
+- Classes that include the slideable module (Bishop/Rook/Queen)
+will need a move_dirs, which moves will use.
+
+
+Sliding pieces (Bishop/Rook/Queen)
+Stepping pieces (Knight/King)
+Null pieces (occupy the 'empty' spaces)
+Pawns (we'll do this class last)
+
+
+
+
 Board
 
 - should hold 2 dimensional array
