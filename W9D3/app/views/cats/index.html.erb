@@ -1,0 +1,9 @@
+<%#= print or return statements %>  
+
+<%# ruby code %>  
+
+
+<% @cats.each do |cat| %>
+   <a href="<%= cat_url(cat.id) %>"><%= cat.name  %></a> 
+<% end %>
+
