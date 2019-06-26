@@ -1,0 +1,99 @@
+Started GET "/" for ::1 at 2019-03-08 11:38:15 -0500
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /usr/local/var/rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.0.7.1/lib/active_record/railtie.rb:113)
+
+Gem::LoadError - can't activate sqlite3 (~> 1.3.6), already activated sqlite3-1.4.0. Make sure all dependencies are added to Gemfile.:
+
+Started POST "/__better_errors/a0601fce2ed70306/variables" for ::1 at 2019-03-08 11:38:16 -0500
+Started GET "/" for ::1 at 2019-03-08 11:38:45 -0500
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /usr/local/var/rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.0.7.1/lib/active_record/railtie.rb:113)
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_sections_sidebar.html.erb (2.6ms)
+  Rendered shared/_gear_dropdown.html.erb (0.3ms)
+  Rendered shared/_main_nav.html.erb (16.6ms)
+  Rendered shared/_masthead.html.erb (0.5ms)
+  Rendered shared/_search_modal.html.erb (0.3ms)
+  Rendered shared/_sections_nav.html.erb (4.8ms)
+  Rendered shared/_search_modal.html.erb (0.1ms)
+  Rendered shared/_main_content.html.erb (0.7ms)
+  Rendered static_pages/index.html.erb within layouts/application (50.0ms)
+Completed 200 OK in 962ms (Views: 956.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-c3d760fa016f716b884523042835374c38aade19021618487cd536d113649675.css?body=1" for ::1 at 2019-03-08 11:38:46 -0500
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2019-03-08 11:38:46 -0500
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-03-08 11:38:46 -0500
+Started GET "/assets/AA_Times_Logo.png" for ::1 at 2019-03-08 11:38:46 -0500
+Started GET "/assets/new_office.jpg" for ::1 at 2019-03-08 11:38:46 -0500
+Started GET "/" for ::1 at 2019-06-26 18:27:34 -0400
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /Users/arshiakhoshnood/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.0.7.1/lib/active_record/railtie.rb:113)
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_sections_sidebar.html.erb (0.2ms)
+  Rendered shared/_gear_dropdown.html.erb (0.4ms)
+  Rendered shared/_main_nav.html.erb (3.8ms)
+  Rendered shared/_masthead.html.erb (0.3ms)
+  Rendered shared/_search_modal.html.erb (0.4ms)
+  Rendered shared/_sections_nav.html.erb (2.6ms)
+  Rendered shared/_search_modal.html.erb (0.0ms)
+  Rendered shared/_main_content.html.erb (0.4ms)
+  Rendered static_pages/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 499ms (Views: 495.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-39bec1bd7bcdaa06082d0749146d36ccfba6d1a085947394159bb25ea0f0fc34.css?body=1" for ::1 at 2019-06-26 18:27:35 -0400
+Started GET "/assets/AA_Times_Logo.png" for ::1 at 2019-06-26 18:27:35 -0400
+Started GET "/assets/new_office.jpg" for ::1 at 2019-06-26 18:27:35 -0400
+Started GET "/" for 127.0.0.1 at 2019-06-26 18:27:44 -0400
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_sections_sidebar.html.erb (0.5ms)
+  Rendered shared/_gear_dropdown.html.erb (0.7ms)
+  Rendered shared/_main_nav.html.erb (6.7ms)
+  Rendered shared/_masthead.html.erb (0.4ms)
+  Rendered shared/_search_modal.html.erb (0.6ms)
+  Rendered shared/_sections_nav.html.erb (3.4ms)
+  Rendered shared/_search_modal.html.erb (0.1ms)
+  Rendered shared/_main_content.html.erb (0.5ms)
+  Rendered static_pages/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 50ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/new_office.jpg" for 127.0.0.1 at 2019-06-26 18:27:45 -0400
+Started GET "/assets/application.self-39bec1bd7bcdaa06082d0749146d36ccfba6d1a085947394159bb25ea0f0fc34.css?body=1" for 127.0.0.1 at 2019-06-26 18:27:45 -0400
+Started GET "/assets/AA_Times_Logo.png" for 127.0.0.1 at 2019-06-26 18:27:45 -0400
+Started GET "/" for ::1 at 2019-06-26 18:29:31 -0400
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_sections_sidebar.html.erb (0.4ms)
+  Rendered shared/_gear_dropdown.html.erb (0.2ms)
+  Rendered shared/_main_nav.html.erb (3.9ms)
+  Rendered shared/_masthead.html.erb (0.3ms)
+  Rendered shared/_search_modal.html.erb (0.2ms)
+  Rendered shared/_sections_nav.html.erb (1.6ms)
+  Rendered shared/_search_modal.html.erb (0.0ms)
+  Rendered shared/_main_content.html.erb (0.4ms)
+  Rendered static_pages/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 92ms (Views: 90.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e56bcfb97fc1281b4b4d4add10287fc958535ee6a6601a1dc93513044eecfaad.css?body=1" for ::1 at 2019-06-26 18:29:31 -0400
+Started GET "/assets/AA_Times_Logo.png" for ::1 at 2019-06-26 18:29:31 -0400
+Started GET "/assets/new_office.jpg" for ::1 at 2019-06-26 18:29:31 -0400
+Started GET "/" for ::1 at 2019-06-26 18:29:51 -0400
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_sections_sidebar.html.erb (0.2ms)
+  Rendered shared/_gear_dropdown.html.erb (0.2ms)
+  Rendered shared/_main_nav.html.erb (3.6ms)
+  Rendered shared/_masthead.html.erb (0.2ms)
+  Rendered shared/_search_modal.html.erb (0.3ms)
+  Rendered shared/_sections_nav.html.erb (1.7ms)
+  Rendered shared/_search_modal.html.erb (0.0ms)
+  Rendered shared/_main_content.html.erb (0.4ms)
+  Rendered static_pages/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/AA_Times_Logo.png" for ::1 at 2019-06-26 18:29:51 -0400
+Started GET "/assets/new_office.jpg" for ::1 at 2019-06-26 18:29:51 -0400
