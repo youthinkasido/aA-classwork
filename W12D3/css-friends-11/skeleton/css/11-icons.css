@@ -1,0 +1,24 @@
+/* PHASE 11: Icons */
+[class*="icon-"] {
+
+    background-image: url("../docs/images/sprite.png");
+}
+.icon-comment{
+
+}
+
+.icon-reblog{
+    
+}
+
+.icon-favorite{
+    
+}
+
+.icon-dude{
+
+}
+
+.icon-pic{
+    
+}
