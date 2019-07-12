@@ -1,0 +1,113 @@
+
+
+html {
+  box-sizing: border-box;
+  background: #8D0801;
+  text-align: center;
+}
+
+h1 {
+  color: #F0F2EF;
+  font-family: 'Bahianita', cursive;
+  font-size: 50px;
+  font-weight: 200;
+}
+
+h3 {
+  color: #E8E288;
+}
+
+.clock-holder {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+}
+.clock-holder div {
+ font-size: 3em;
+ color: black;
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ -moz-animation: clock-holder 5s linear infinite;
+ -webkit-animation: clock-holder 5s linear infinite;
+ animation: clock-holder 5s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes clock-holder {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes clock-holder {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.welcome {
+  font-weight: 400;
+  margin-top: 100px;
+}
+
+/*  Phase 4: Slide In & Out Classes */
+
+.align-left {
+  float: left;
+  margin-right: 20px;
+}
+
+.align-right {
+  float: right;
+  margin-left: 20px;
+}
+
+.slide {
+  opacity: 0;
+  transition: all .5s;
+}
+
+.align-left.slide {
+  transform: translateX(-30%) scale(0.95);
+}
+
+.align-right.slide {
+  transform: translateX(30%) scale(0.95);
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
+ 
+.drop-down-dog-nav li a {
+  display: none;
+}
+
+.show-drop-down li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  border: 0.4px solid white;
+}
+
+.show-drop-down li a:hover {
+  color: #8D0801;
+}
+
+.drop-down-dog-nav ul {
+  background: black;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
