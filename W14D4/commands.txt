@@ -1,0 +1,6 @@
+docker container run -d -—name nginx -p 80:80 nginx
+
+
+to build an img
+
+docker build . -t youthinkasido/nodeapp:version1
